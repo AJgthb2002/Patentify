@@ -3,9 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_admin_menu.xml" value="0.1671195652173913" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/drawable/rounded_corner.xml" value="0.12631578947368421" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/drawable/rounded_corner_card.xml" value="0.12631578947368421" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_admin_menu.xml" value="0.14666666666666667" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_check_application_num.xml" value="0.1" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_form_add_new.xml" value="0.1" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_form_fer_details.xml" value="0.12" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_form_grant_details.xml" value="0.13333333333333333" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_form_hearing_details.xml" value="0.12" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_form_publication_details.xml" value="0.1" />
         <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_login.xml" value="0.1671195652173913" />
-        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_splash_screen.xml" value="0.1671195652173913" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_splash_screen.xml" value="0.13333333333333333" />
+        <entry key="..\:/Data_Ananya/Ananya/android_projects/PATENTIFY/app/src/main/res/layout/activity_update_menu.xml" value="0.11611842105263158" />
       </map>
     </option>
   </component>
