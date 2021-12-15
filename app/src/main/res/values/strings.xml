@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">Patentify</string>
+
+
+    <string-array name="options">
+        <item>FILED</item>
+        <item>PUBLISHED</item>
+        <item>FER Received</item>
+        <item>FER Response Filed</item>
+        <item>Waiting for Final Results</item>
+        <item>Granted</item>
+        <item>Rejected</item>
+    </string-array>
+
 </resources>

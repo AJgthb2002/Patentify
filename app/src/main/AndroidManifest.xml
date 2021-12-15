@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Form_Add_New"
+            android:exported="false" />
+        <activity
+            android:name=".Form_Grant_details"
+            android:exported="false" />
+        <activity
+            android:name=".Form_Publication_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Form_Hearing_Details"
+            android:exported="false" />
+        <activity
+            android:name=".Form_FER_Details"
+            android:exported="false" />
+        <activity
+            android:name=".CheckApplicationNum"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".AdminMenuActivity"
             android:exported="false" />
         <activity
