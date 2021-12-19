@@ -6,14 +6,22 @@ import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
 
 public class Form_Add_New extends AppCompatActivity {
 
-    private Button btnSubmit;
+    Spinner Status;
+    RadioGroup InvoiceRecd, InvoiceFwd;
+    RadioButton invRecd, invFwd;
+
     private Button btnProvisionalDate, btnCompleteDate, btnRequestForExamDate, btnPublicationDate,btnForm1Date,
             btnForm3Date,btnForm5Date, btnForm18Date, btnForm26Date, btnFERreceivedDate, btnFERresponseSubmittedDate,
             btnExaminationDate, btnGrantDate;
@@ -25,6 +33,42 @@ public class Form_Add_New extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_form_add_new);
+
+        EditText PAN=(EditText)findViewById(R.id.PAN);
+        EditText Name=(EditText)findViewById(R.id.name);
+        EditText Title=(EditText)findViewById(R.id.Title);
+
+        RadioButton receivedYes=(RadioButton)findViewById(R.id.Received);
+        RadioButton receivedNo=(RadioButton)findViewById(R.id.NotReceived);
+        RadioButton forwardedYes=(RadioButton)findViewById(R.id.Forwarded);
+        RadioButton forwardedNo=(RadioButton)findViewById(R.id.NotForwarded);
+        InvoiceRecd = (RadioGroup) findViewById(R.id.InvoiceReceived);
+        InvoiceFwd = (RadioGroup) findViewById(R.id.InvoiceForwarded);
+        Button submitSave=(Button)findViewById(R.id.btnSubmit);
+
+        submitSave.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String pan=PAN.getText().toString();
+                String name=Name.getText().toString();
+                String title=Title.getText().toString();
+                String Collector="";
+                if (pan.isEmpty()){
+                    Toast.makeText(Form_Add_New.this,"Please Enter Patent Application number",Toast.LENGTH_SHORT).show();
+                }
+                if (name.isEmpty()){
+                    Toast.makeText(Form_Add_New.this,"Please Enter Applicant Name",Toast.LENGTH_SHORT).show();
+                }
+                if (title.isEmpty()){
+                    Toast.makeText(Form_Add_New.this,"Please Enter Patent Title",Toast.LENGTH_SHORT).show();
+                }
+                Collector+=pan+"\n";
+                Collector+=name+"\n";
+                Collector+=title+"\n";
+                Toast.makeText(Form_Add_New.this,"User Info \n:"+Collector,Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
         btnProvisionalDate= findViewById(R.id.btnProvisionalDate);
         ProvisionaldateText= findViewById(R.id.ProvisionaldateText);
